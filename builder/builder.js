@@ -9,8 +9,9 @@ esbuild.build({
     minify: true,
     entryPoints: ["src/main.ts"],
     outfile: "dist/main.js",
-    external: [
-        /**
+    external: [],
+    plugins: [
+            /**
          * Add external folders
          * EXAMPLE:
          *
@@ -20,6 +21,5 @@ esbuild.build({
          * }),
          *
          */
-    ],
-    plugins: []
+]
 })
