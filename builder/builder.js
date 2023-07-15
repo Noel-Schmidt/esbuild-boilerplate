@@ -10,16 +10,5 @@ esbuild.build({
     entryPoints: ["src/main.ts"],
     outfile: "dist/main.js",
     external: [],
-    plugins: [
-            /**
-         * Add external folders
-         * EXAMPLE:
-         *
-         * copyStaticFiles({
-         *       src: "src/views",
-         *       dest: "dist/views"
-         * }),
-         *
-         */
-]
+    plugins: []
 })
